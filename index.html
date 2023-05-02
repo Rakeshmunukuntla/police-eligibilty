@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Document</title>
+     <style>
+        h1{
+            font-size: 4vw;
+        }
+     </style>
+</head>
+<body>
+    <h1 id="a"></h1>
+    <script>
+        console.log("###############")
+        console.log( "  WELCOME TO ")
+        console.log("HYDERABAD POLICE")
+        console.log("###############")
+        document.write(" ############### ")
+        document.write( "  WELCOME TO ")
+        document.write("HYDERABAD POLICE")
+        document.write(" ############### ")
+        // document.write("IF YOU ARE MALE ENTER 0 OR IF YOU ARE FEMALE ENTER 1")
+        var gen=prompt("IF YOU ARE MALE ENTER 0 OR IF YOU ARE FEMALE ENTER 1")
+        var gn=Number(gen)
+        if(gn==0)
+        {
+            var h5=prompt("enter your height in cms")
+            var h1=Number(h5)
+            var per=prompt("enter your degree percentage")
+            var p=Number(per)
+            if(h1>=175 && p>=60)
+            {
+                console.log("your eligible for pc exam")
+                document.getElementById("a").innerHTML="your eligible for pc exam"
+            }
+            else
+            {
+                console.log("your not eligible for pc exam")
+                // document.write("your not eligible for pc exam") 
+                document.getElementById("a").innerHTML="your not eligible for pc exam" 
+            }
+
+
+        }
+        else if (gn==1)
+        {
+            var h6=prompt("enter your height in cms")
+            var h2=Number(h6)
+            var perf=prompt("enter your inter percentage")
+            var pf=Number(perf)
+            if(h2>=155 && pf>=60)
+            {
+                console.log("your eligible for pc exam")
+                // document.write("your eligible for pc exam")
+                document.getElementById("a").innerHTML="your eligible for pc exam"
+            }
+            else
+            {
+                console.log("your not eligible for pc exam")
+                // document.write("your not eligible for pc exam")
+                document.getElementById("a").innerHTML="your not eligible for pc exam"  
+            }
+
+
+        }
+        else
+        {
+            console.log("refresh the page and enter correct value for gender")
+            // document.write("refresh the page and enter correct value for gender") 
+            document.getElementById("a").innerHTML="refresh the page and enter correct value for gender"   
+        }
+
+    </script>
+</body>
+</html>
